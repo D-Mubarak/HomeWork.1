@@ -5,23 +5,20 @@ public class Main {
     private static Object String;
 
     public static void main(String[] args) {
-        String str;
-        int NUM = 26;
-        String word = " Градусов на улице";
-        str = (NUM + word);
-        System.out.print(NUM + ",");
-        System.out.print(word + ",");
-        System.out.println(str );
+        String weatherInBishkek;
+        final int NUM = 26;
+        String word = "Градусов на улице";
+        weatherInBishkek = (NUM + word);
+        System.out.print(NUM + ", ");
+        System.out.print(word + ", ");
+        System.out.println(weatherInBishkek);
 
-        if(NUM >= 1){
+        if (NUM >= 1) {
             System.out.println(" Вы сохранили положительное число");
-        }
-
-        if (NUM <=-1){
+        } else if (NUM <= -1) {
             System.out.println("Вы сохранили отрицательное число");
 
-        }
-        if (NUM == 0){
+        } else if (NUM == 0) {
             System.out.println("Вы сохранили нуль");
         }
     }
